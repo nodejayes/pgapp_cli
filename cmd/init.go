@@ -288,7 +288,7 @@ import (
 )
 
 var header = fmt.Sprintf(`+"`"+`-- complain if script is sourced in psql, rather than via CREATE EXTENSION"+
-	\echo Use "CREATE EXTENSION %v" to load this file. \quit
+--	\echo Use "CREATE EXTENSION %v" to load this file. \quit
 	`+"`"+`, meta.AppName)
 var aprasterFile = fmt.Sprintf("%v.control", meta.AppName)
 
